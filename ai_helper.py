@@ -14,8 +14,7 @@ client = genai.Client(api_key=GEMINI_API_KEY)
 
 
 def generate_test_cases(requirements_text):
-    print(f"🤖 Відправляю в AI текст довжиною {len(requirements_text)} символів...")
-
+    print(f"🤖 Відправляю в AI текст вимог...")
     prompt = f"""
     Act as a Senior QA Engineer. 
     Analyze the following requirements text and extract checklist-style test cases.
@@ -24,30 +23,53 @@ def generate_test_cases(requirements_text):
     {requirements_text}
 
     OUTPUT FORMAT RULES:
-    1. Return ONLY a raw JSON list of strings. No markdown, no "json" tags, no extra text.
-    2. Example format: ["Verify that login button is disabled when fields are empty", "Verify error message on invalid email"]
-    3. Language of test cases: Ukrainian (keep technical terms in English if needed).
+    1. Return ONLY a raw JSON list of strings. No markdown, no "json" tags.
+    2. Example: ["Verify login", "Check validation"]
+    3. Language: Ukrainian.
     """
     try:
-        # Використовуємо стабільну модель 1.5-flash
         response = client.models.generate_content(
-            model='gemini-2.5-flash',
+            model='gemini-1.5-flash',
             contents=prompt
         )
-
-        text_response = response.text.strip()
-        # Чистимо відповідь від markdown
-        clear_json = text_response.replace("```json", "").replace("```", "").strip()
-
-        test_cases = json.loads(clear_json)
-        print(f"✅ AI повернув {len(test_cases)} кейсів.")
-        return test_cases
-
+        text = response.text.strip().replace("```json", "").replace("```", "").strip()
+        return json.loads(text)
     except Exception as e:
         print(f"❌ Помилка AI: {e}")
-        # Якщо помилка, спробуємо вивести, що саме повернув AI (якщо повернув)
-        try:
-            print(f"Сира відповідь: {response.text}")
-        except:
-            pass
         return []
+
+
+def generate_bug_report(case_text, user_description):
+    """
+    Генерує баг-репорт на основі кейсу та опису юзера.
+    """
+    print(f"🐛 Генерую баг-репорт...")
+
+    prompt = f"""
+    Act as a Senior QA Engineer.
+    I found a bug while executing a test case. 
+    Please write a professional, short, and clear Bug Report in English based on the inputs below.
+
+    INPUT DATA:
+    - Original Test Case: "{case_text}"
+    - Tester's Observation (What went wrong): "{user_description}"
+
+    OUTPUT FORMAT RULES:
+    1. Language: English (Technical style).
+    2. Structure:
+       **Title:** [Concise summary of the bug]
+       **Description:** [Short explanation]
+       **Expected Result:** [What should happen based on the test case]
+       **Actual Result:** [What actually happened based on observation]
+    3. Do NOT add preamble or extra text. Just the bug report fields.
+    """
+
+    try:
+        response = client.models.generate_content(
+            model='gemini-1.5-flash',
+            contents=prompt
+        )
+        return response.text.strip()
+    except Exception as e:
+        print(f"❌ Помилка генерації баг-репорту: {e}")
+        return f"Error generating report. Original desc: {user_description}"

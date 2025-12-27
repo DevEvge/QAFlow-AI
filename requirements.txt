@@ -5,3 +5,4 @@ python-docx
 python-dotenv
 google-genai
 textract==1.6.3
+beautifulsoup4

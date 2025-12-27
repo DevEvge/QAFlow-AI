@@ -3,4 +3,5 @@ gspread
 google-auth
 python-docx
 python-dotenv
-google-generativeai
+google-genai
+textract==1.6.3

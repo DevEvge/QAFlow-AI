@@ -1,6 +1,7 @@
 import os
 import json
 from google import genai
+from google.genai import types
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -12,76 +13,88 @@ if not GEMINI_API_KEY:
 
 client = genai.Client(api_key=GEMINI_API_KEY)
 
+# Використовуємо стабільну та швидку модель
+MODEL_ID = 'gemini-2.0-flash'
+
 
 def generate_test_cases(requirements_text):
-    # Промпт тепер просить структуру {module_name, cases}
+    # Промпт рівня Senior QA: фокус на покритті та чіткості
     prompt = f"""
-    Act as a Senior QA Engineer. 
-    Analyze the following requirements text.
+    Act as a Lead QA Engineer. 
+    Analyze the provided requirements text to create a comprehensive Test Checklist.
 
-    1. Generate a concise, professional Name for this Module (2-4 words) based on the content.
-    2. Extract checklist-style test cases.
+    TASKS:
+    1. Identify the main functional module described in the text. Generate a concise, professional Module Name (2-5 words, e.g., "Auth & Security", "Payment Gateway").
+    2. Extract test cases covering:
+       - Positive scenarios (Happy Path).
+       - Critical negative scenarios (Edge cases, Validation).
 
-    Requirements:
+    Requirements Text:
     {requirements_text}
 
-    OUTPUT FORMAT RULES:
-    1. Return ONLY raw JSON. No markdown, no ```json``` tags.
-    2. Structure:
+    OUTPUT RULES:
+    1. Return ONLY raw JSON. No markdown formatting (no ```json tags).
+    2. JSON Structure:
     {{
-        "module_name": "User Profile Settings",
+        "module_name": "Module Name Here",
         "cases": [
-            "Verify that...",
-            "Check that..."
+            "Verify that user can login with valid credentials",
+            "Verify validation error for invalid email format",
+            ...
         ]
     }}
-    3. Language: Ukrainian.
+    3. Language of Test Cases: Ukrainian (use standard QA terminology in English where appropriate, e.g., 'Submit', 'Placeholder').
     """
     try:
         response = client.models.generate_content(
-            model='gemini-2.0-flash-exp',
-            contents=prompt
+            model=MODEL_ID,
+            contents=prompt,
+            config=types.GenerateContentConfig(
+                response_mime_type="application/json"
+            )
         )
-        text_response = response.text.strip()
-        # Чистимо від маркдауну, якщо AI його таки додав
-        clear_json = text_response.replace("```json", "").replace("```", "").strip()
 
-        data = json.loads(clear_json)
+        data = json.loads(response.text)
 
-        # Перестраховка: якщо AI повернув просто список (старий формат), робимо заглушку
-        if isinstance(data, list):
-            return "Generated Module", data
+        module_name = data.get("module_name", "General Requirements")
+        cases = data.get("cases", [])
 
-        return data.get("module_name", "Unknown Module"), data.get("cases", [])
+        # Обробка випадку, якщо AI повернув просто список
+        if not cases and isinstance(data, list):
+            return "General Requirements", data
+
+        return module_name, cases
 
     except Exception as e:
-        print(f"❌ Помилка AI (Cases): {e}")
+        print(f"❌ AI Error (Cases): {e}")
         return None, []
 
 
 def generate_bug_report(case_text, user_description):
+    # Промпт для ідеального баг-репорту
     prompt = f"""
     Act as a Senior QA Engineer.
-    I found a bug. Write a professional Bug Report in English.
+    Based on the failed Test Case and the Tester's Observation, write a professional Bug Report in English.
 
-    Test Case: "{case_text}"
-    Observation: "{user_description}"
+    INPUT:
+    - Test Case: "{case_text}"
+    - Observation: "{user_description}"
 
-    OUTPUT FORMAT:
-    **Title:** [Summary]
-    **Description:** [Details]
-    **Expected Result:** [Exp]
-    **Actual Result:** [Act]
+    OUTPUT FORMAT (Strictly follow this structure):
+    **Title:** [Concise, meaningful summary of the defect]
+    **Description:** [Brief context]
+    **Expected Result:** [What should happen according to requirements]
+    **Actual Result:** [What actually happened based on observation]
 
-    Return ONLY the report text.
+    Return ONLY the text of the report. No intro/outro.
     """
 
     try:
         response = client.models.generate_content(
-            model='gemini-2.0-flash-exp',
+            model=MODEL_ID,
             contents=prompt
         )
         return response.text.strip()
     except Exception as e:
-        print(f"❌ Помилка AI (Bug Report): {e}")
-        return f"Error generating report. Desc: {user_description}"
+        print(f"❌ AI Error (Bug Report): {e}")
+        return f"Error generating report. Details: {user_description}"

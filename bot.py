@@ -235,7 +235,8 @@ async def process_pass(callback: CallbackQuery, state: FSMContext):
         case_text = text_lines[-1]
         utils.update_case_status(row_number, "Pass")
         await callback.message.edit_text(f"~~{case_text}~~\n\n✅ **Passed**", reply_markup=None)
-    except:
+    except Exception as e:
+        print(f"❌ Error inside process_pass: {e}")
         await callback.message.edit_reply_markup(reply_markup=None)
 
     data = await state.get_data()
@@ -275,8 +276,8 @@ async def process_bug_desc(message: Message, state: FSMContext):
     try:
         await bot.edit_message_text(f"~~{data['failed_case_text']}~~\n\n❌ **Failed**", chat_id=message.chat.id,
                                     message_id=data['msg_id'], reply_markup=None)
-    except:
-        pass
+    except Exception as e:
+        print(f"❌ Error processing bug report msg update: {e}")
 
     module_name = data.get('current_module')
     await state.set_state(TestSession.testing)

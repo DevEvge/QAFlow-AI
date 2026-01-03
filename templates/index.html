@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QAFlow AI | Premium</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="icon" type="image/png" href="/static/favicon.png">
+    <link rel="manifest" href="/static/manifest.json">
+    <link rel="apple-touch-icon" href="/static/icons/icon-192x192.png">
+    <meta name="theme-color" content="#0B0F19">
+</head>
+
+<body>
+
+    <div class="app-layout">
+
+        <!-- MOBILE HEADER -->
+        <div class="mobile-header">
+            <div class="logo"><span>⚡</span> QAFlow</div>
+            <button class="btn btn-ghost" onclick="app.toggleSidebar()">☰</button>
+        </div>
+
+        <!-- SIDEBAR -->
+        <aside id="sidebar" class="sidebar">
+            <div class="logo-area">
+                <div class="logo"><span>⚡</span> QAFlow <span>AI</span></div>
+            </div>
+
+            <div class="nav-menu">
+                <div class="sidebar-section">
+                    <label>Project</label>
+                    <select id="project-select" class="project-selector" onchange="app.switchProject(this.value)">
+                        <!-- Projects loaded dynamically -->
+                    </select>
+                </div>
+
+                <div class="sidebar-section">
+                    <label>Menu</label>
+                    <nav>
+                        <button class="nav-item active" onclick="app.goHome()" id="nav-dashboard">
+                            <span>🏠</span> Dashboard
+                        </button>
+                        <button class="nav-item" onclick="app.showAllCases()" id="nav-all">
+                            <span>📋</span> All Cases
+                        </button>
+                        <button class="nav-item" onclick="app.showBugTracker()" id="nav-bugs">
+                            <span>🐛</span> Bug Tracker
+                        </button>
+                        <button class="nav-item" onclick="app.showSettings()" id="nav-settings">
+                            <span>⚙️</span> Settings
+                        </button>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="sidebar-footer">
+                <div class="status-badge">
+                    <div class="status-dot"></div>
+                    <span id="ai-status">Gemini 2.0 Flash: Ready</span>
+                </div>
+            </div>
+        </aside>
+
+        <!-- MAIN CONTENT AREA -->
+        <main class="main-content">
+
+            <!-- NO PROJECTS ONBOARDING -->
+            <section id="onboarding-view" class="view-section" style="display: none;">
+                <div style="max-width: 500px; margin: 5rem auto; text-align: center;">
+                    <div style="font-size: 4rem; margin-bottom: 1rem;">🚀</div>
+                    <h1 style="font-size: 2rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-primary);">
+                        Welcome to QAFlow AI!</h1>
+                    <p style="color: var(--text-secondary); margin-bottom: 2rem;">Create your first project to get
+                        started with AI-powered test case management.</p>
+
+                    <div class="glass-card" style="text-align: left;">
+                        <h2 class="card-title"><span>📁</span> Create Your First Project</h2>
+                        <div style="display: flex; gap: 0.5rem;">
+                            <input type="text" id="onboarding-project-name" placeholder="Enter project name..."
+                                style="flex-grow: 1; padding: 0.75rem; border-radius: 8px; background: var(--bg-color); border: 1px solid var(--border-color); color: var(--text-primary); font-family: inherit;">
+                            <button class="btn btn-primary" onclick="app.createProjectFromOnboarding()">+
+                                Create</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- DASHBOARD VIEW -->
+            <section id="dashboard-view" class="view-section active">
+
+                <div class="hero-section">
+                    <h1 class="hero-title">Automate Your Quality Assurance</h1>
+                    <p class="hero-subtitle">Intelligent document parsing and test execution powered by Google Gemini
+                        2.0
+                    </p>
+                </div>
+
+                <div class="grid-cols">
+                    <!-- Upload Zone -->
+                    <div class="glass-card">
+                        <h2 class="card-title"><span>📂</span> Ingest Requirements</h2>
+                        <div class="upload-area" id="drop-zone">
+                            <div class="upload-icon">☁️</div>
+                            <p style="color: var(--text-secondary); margin-bottom: 1rem;">Drag & Drop .docx or .txt
+                                files
+                            </p>
+                            <button class="btn btn-primary"
+                                onclick="document.getElementById('file-input').click()">Select
+                                Files (Max 5)</button>
+                            <input type="file" id="file-input" hidden accept=".docx,.doc,.txt" multiple>
+                        </div>
+                        <div id="upload-queue" style="margin-top: 1rem; display: none;">
+                            <h3 style="font-size: 1rem; margin-bottom: 0.5rem; color: var(--text-secondary);">Upload
+                                Queue</h3>
+                            <div id="queue-list"></div>
+                        </div>
+                        <div id="upload-loader"
+                            style="display: none; margin-top: 1rem; text-align: center; color: var(--accent-primary);">
+                            <div class="spinner" style="margin: 0 auto 10px;"></div>
+                            Analyzing logic...
+                        </div>
+                    </div>
+
+                    <!-- Modules List -->
+                    <div class="glass-card">
+                        <h2 class="card-title"><span>📦</span> Active Modules</h2>
+                        <div id="modules-list" class="modules-container">
+                            <!-- Content Injected via JS -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- BUG TRACKER VIEW -->
+            <section id="bug-tracker-view" class="view-section">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem">
+                    <button class="btn btn-ghost" onclick="app.goHome()">← Dashboard</button>
+                    <div style="font-size: 1.5rem; font-weight: 600;">🐛 Defect Tracker</div>
+                </div>
+                <div style="display: flex; gap: 1rem; margin-bottom: 1rem; flex-wrap: wrap;">
+                    <select id="bug-module-filter" onchange="app.filterBugs()"
+                        style="padding: 0.5rem; border-radius: 8px; background: var(--card-bg); border: 1px solid var(--border-color); color: var(--text-primary);">
+                        <option value="all">All Modules</option>
+                    </select>
+                </div>
+
+                <div class="grid-cols" id="bugs-list">
+                    <!-- Bugs Injected Here -->
+                </div>
+            </section>
+
+            <!-- ALL CASES VIEW -->
+            <section id="all-cases-view" class="view-section">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem">
+                    <button class="btn btn-ghost" onclick="app.goHome()">← Dashboard</button>
+                    <div style="font-size: 1.5rem; font-weight: 600;">📋 All Test Cases</div>
+                </div>
+                <div style="display: flex; gap: 1rem; margin-bottom: 1rem; flex-wrap: wrap;">
+                    <select id="case-module-filter" onchange="app.filterCases()"
+                        style="padding: 0.5rem; border-radius: 8px; background: var(--card-bg); border: 1px solid var(--border-color); color: var(--text-primary);">
+                        <option value="all">All Modules</option>
+                    </select>
+                    <select id="case-status-filter" onchange="app.filterCases()"
+                        style="padding: 0.5rem; border-radius: 8px; background: var(--card-bg); border: 1px solid var(--border-color); color: var(--text-primary);">
+                        <option value="all">All Statuses</option>
+                        <option value="PENDING">Pending</option>
+                        <option value="Pass">Passed</option>
+                        <option value="FAILED">Failed</option>
+                    </select>
+                </div>
+
+                <div style="display: flex; gap: 1rem; margin-bottom: 1rem; flex-wrap: wrap;">
+                    <!-- Removed Wipe Data button as requested -->
+                </div>
+
+                <div id="all-cases-list"></div>
+
+                <div id="pagination-controls"
+                    style="display:flex; justify-content:center; gap:1rem; margin-top:2rem; align-items:center;">
+                    <!-- Pagination -->
+                </div>
+            </section>
+
+            <!-- SETTINGS VIEW -->
+            <section id="settings-view" class="view-section">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem">
+                    <button class="btn btn-ghost" onclick="app.goHome()">← Dashboard</button>
+                    <div style="font-size: 1.5rem; font-weight: 600;">⚙️ Settings</div>
+                </div>
+
+                <div class="grid-cols">
+                    <!-- Project Management -->
+                    <div class="glass-card">
+                        <h2 class="card-title"><span>📁</span> Project Management</h2>
+
+                        <div style="margin-bottom: 1.5rem;">
+                            <label
+                                style="display: block; color: var(--text-secondary); font-size: 0.85rem; margin-bottom: 0.5rem;">Create
+                                New Project</label>
+                            <div style="display: flex; gap: 0.5rem;">
+                                <input type="text" id="new-project-name" placeholder="Project name..."
+                                    style="flex-grow: 1; padding: 0.75rem; border-radius: 8px; background: var(--bg-color); border: 1px solid var(--border-color); color: var(--text-primary); font-family: inherit;">
+                                <button class="btn btn-primary" onclick="app.createProject()">+ Create</button>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label
+                                style="display: block; color: var(--text-secondary); font-size: 0.85rem; margin-bottom: 0.5rem;">Your
+                                Projects</label>
+                            <div id="projects-list" style="max-height: 200px; overflow-y: auto;"></div>
+                        </div>
+                    </div>
+
+                    <!-- Appearance & Export -->
+                    <div class="glass-card">
+                        <h2 class="card-title"><span>🎨</span> Appearance & Export</h2>
+
+                        <div style="margin-bottom: 1.5rem;">
+                            <button class="btn btn-ghost" onclick="app.toggleTheme()" id="theme-toggle-btn"
+                                style="width: 100%; justify-content: center; background: var(--card-hover);">
+                                🌙 Dark Mode
+                            </button>
+                        </div>
+
+                        <div style="margin-bottom: 1.5rem;">
+                            <button class="btn btn-ghost" onclick="app.exportCSV()"
+                                style="width: 100%; justify-content: center; background: var(--card-hover);">
+                                📥 Export to CSV
+                            </button>
+                        </div>
+
+                        <div style="border-top: 1px solid var(--border-color); padding-top: 1.5rem;">
+                            <label
+                                style="display: block; color: var(--danger); font-size: 0.85rem; margin-bottom: 0.5rem; font-weight: 600;">⚠️
+                                Danger Zone</label>
+                            <button class="btn btn-danger" onclick="app.deleteAllProjectCases()"
+                                style="width: 100%; justify-content: center;">
+                                🗑️ Wipe Current Project Data
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Keyboard Shortcuts -->
+                    <div class="glass-card">
+                        <h2 class="card-title"><span>⌨️</span> Keyboard Shortcuts</h2>
+                        <div style="color: var(--text-secondary); font-size: 0.9rem;">
+                            <div
+                                style="display: flex; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px solid var(--border-color);">
+                                <span>Pass Test Case</span>
+                                <kbd
+                                    style="background: var(--card-hover); padding: 0.25rem 0.5rem; border-radius: 4px;">P</kbd>
+                            </div>
+                            <div
+                                style="display: flex; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px solid var(--border-color);">
+                                <span>Fail Test Case</span>
+                                <kbd
+                                    style="background: var(--card-hover); padding: 0.25rem 0.5rem; border-radius: 4px;">F</kbd>
+                            </div>
+                            <div
+                                style="display: flex; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px solid var(--border-color);">
+                                <span>Skip (Retest Mode)</span>
+                                <kbd
+                                    style="background: var(--card-hover); padding: 0.25rem 0.5rem; border-radius: 4px;">S</kbd>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; padding: 0.5rem 0;">
+                                <span>Go to Dashboard</span>
+                                <kbd
+                                    style="background: var(--card-hover); padding: 0.25rem 0.5rem; border-radius: 4px;">Esc</kbd>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TESTING VIEW -->
+            <section id="testing-view" class="view-section">
+                <button class="btn btn-ghost" onclick="app.goHome()">← Return to Dashboard</button>
+
+                <div class="test-workspace">
+                    <div class="case-card-big">
+                        <span class="status-badge" style="display: inline-flex; margin-bottom: 2rem;"
+                            id="current-module-badge">Module</span>
+                        <div class="case-id" id="case-id"
+                            style="color: var(--text-secondary); margin-bottom: 1rem; font-weight: 600;">#001</div>
+
+                        <div id="case-content-area">
+                            <div class="case-text-container">
+                                <div class="case-section steps">
+                                    <span class="section-label">📋 Тестові кроки</span>
+                                    <div class="section-content" id="case-steps">Завантаження...</div>
+                                </div>
+                                <div class="case-section result">
+                                    <span class="section-label">🎯 Очікуваний результат</span>
+                                    <div class="section-content" id="case-result">...</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Loading State for Case -->
+                        <div id="case-loader" style="display: none;">
+                            <div class="skeleton" style="margin-bottom: 2rem; height: 100px;"></div>
+                            <div class="skeleton" style="height: 60px;"></div>
+                        </div>
+                    </div>
+
+                    <div class="action-bar">
+                        <button class="btn btn-danger" onclick="app.handleFail()">
+                            <span>✖</span> Failed
+                        </button>
+                        <button class="btn btn-success" onclick="app.handlePass()">
+                            <span>✔</span> Pass
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+
+    <!-- BUG REPORT MODAL -->
+    <div id="bug-modal" class="modal-backdrop">
+        <div class="modal-window">
+            <h2 class="card-title">🐛 Report Defect</h2>
+            <p style="color: var(--text-secondary);">Describe the actual result. AI will generate a professional
+                Jira-ready report.</p>
+
+            <textarea id="bug-desc" class="input-area"
+                placeholder="Example: The submit button is unresponsive when the email field is empty..."></textarea>
+
+            <div style="display: flex; justify-content: flex-end; gap: 1rem;">
+                <button class="btn btn-ghost" onclick="app.closeModal()">Cancel</button>
+                <button class="btn btn-primary" onclick="app.submitBug()">Submit Report</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- NOTIFICATION TOAST -->
+    <div id="toast" class="toast-notification">
+        <span class="toast-icon">✨</span>
+        <span id="toast-msg">Action Successful</span>
+    </div>
+
+    <!-- ERROR MODAL -->
+    <div id="error-modal" class="error-modal">
+        <div class="error-content">
+            <span class="error-icon">⚠️</span>
+            <h3 class="error-title">Oops! Something went wrong</h3>
+            <p class="error-msg" id="error-msg-text">An unknown error occurred.</p>
+            <button class="btn btn-primary" onclick="app.closeErrorModal()" style="width: 100%">Got it</button>
+        </div>
+    </div>
+
+    <!-- FLOATING ACTION BAR -->
+    <div id="floating-action-bar" class="floating-bar">
+        <span id="selected-count" style="font-weight:600">0 selected</span>
+        <div style="display:flex; gap:0.5rem">
+            <button class="btn btn-success" onclick="app.bulkStatus('Pass')"
+                style="padding:0.5rem 1rem; font-size:0.9rem">✔ Mark Pass</button>
+            <button class="btn btn-danger" onclick="app.bulkDelete()" style="padding:0.5rem 1rem; font-size:0.9rem">🗑️
+                Delete</button>
+        </div>
+    </div>
+
+    <!-- TEMPLATES FOR JS -->
+    <template id="skeleton-loader-tpl">
+        <div class="skeleton"></div>
+        <div class="skeleton" style="margin-top: 10px; opacity: 0.5;"></div>
+    </template>
+
+    <script src="/static/app.js"></script>
+</body>
+
+</html>

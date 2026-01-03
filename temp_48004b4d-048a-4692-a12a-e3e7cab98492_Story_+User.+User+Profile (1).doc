@@ -1,0 +1,1198 @@
+Date: Fri, 2 Jan 2026 16:29:34 +0000 (UTC)
+Message-ID: <620625063.65.1767371374175@0d3223c71e27>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_64_1332878915.1767371374174"
+
+------=_Part_64_1332878915.1767371374174
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Story: User. User Profile</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font: var(--ds-font-body-small, Arial, Helvetica, FreeSans, sans-se=
+rif);
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        page-break-after: avoid;
+    }
+
+    pre {
+        font: var(--ds-font-code, Monaco, "Courier New", monospace);
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Story: User. User Profile</h1>
+    <div class=3D"Section1">
+        <p local-id=3D"9dbe8a49-7c11-4209-964f-fe0be80ace0e">Referrence</p>=
+<span class=3D"confluence-embedded-file-wrapper image-center-wrapper conflu=
+ence-embedded-manual-size"><img class=3D"confluence-embedded-image image-ce=
+nter" alt=3D"image-20251030-221345.png" width=3D"468" loading=3D"lazy" src=
+=3D"1c2c55cd4a4bee26e5535472f37982a67c6e2ce3d28516b57f9891d0a814ee2c" data-=
+image-src=3D"https://rndpoint.atlassian.net/wiki/download/attachments/18379=
+24367/image-20251030-221345.png?version=3D1&amp;modificationDate=3D17618624=
+27070&amp;cacheVersion=3D1&amp;api=3Dv2" data-height=3D"1189" data-width=3D=
+"733" data-unresolved-comment-count=3D"0" data-linked-resource-id=3D"183795=
+7135" data-linked-resource-version=3D"1" data-linked-resource-type=3D"attac=
+hment" data-linked-resource-default-alias=3D"image-20251030-221345.png" dat=
+a-base-url=3D"https://rndpoint.atlassian.net/wiki" data-linked-resource-con=
+tent-type=3D"image/png" data-linked-resource-container-id=3D"1837924367" da=
+ta-linked-resource-container-version=3D"6" data-media-id=3D"02f34f81-35d5-4=
+6c9-8191-d627cf62f13c" data-media-type=3D"file" height=3D"759"></span>
+<p local-id=3D"c0a9df70-4fe6-4885-b2fb-f537dbd32cce"></p>
+<div class=3D"table-wrap">
+<table data-table-width=3D"760" data-layout=3D"default" data-local-id=3D"af=
+f8ddaa-44a7-4c9e-ba41-b9583b98a04a" class=3D"confluenceTable">
+<tbody>
+<tr ac:local-id=3D"90b3d644-3b7a-4deb-bd84-d6d368001b45">
+<td data-local-id=3D"4cfbb443-7e24-44cb-ae09-ef574bbe25b4" class=3D"conflue=
+nceTd">
+<p local-id=3D"68bbc960-cfb3-459c-8d8c-a6d68efbf689"></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"default" data-local-id=3D"e456adb7-e950-4814-a1eb-c0e=
+a4d243898" class=3D"confluenceTable">
+<tbody>
+<tr ac:local-id=3D"9946412a-51bd-4a93-a491-ec2dcb5b09fe">
+<th data-local-id=3D"dea4b290-1377-405f-a486-59f3ebe1a841" class=3D"conflue=
+nceTh">
+<p local-id=3D"3569584d-aa04-4673-b23c-13955ad09f97"><strong>Jira Link</str=
+ong></p></th>
+<td data-local-id=3D"6af7c45a-2fa1-4467-9be1-ec2bc23cf556" class=3D"conflue=
+nceTd">
+<p local-id=3D"5b3a7f28-f747-4c95-b6c9-378baf4a48ac"></p></td>
+</tr>
+<tr ac:local-id=3D"fbfef90e-fc74-46a3-b705-79ae4fa2bad7">
+<th data-local-id=3D"aba52c7c-63a0-4de2-8f4e-b35cfdd56977" class=3D"conflue=
+nceTh">
+<p local-id=3D"6c5f9170-8168-4bba-b926-595f41c0cea5"><strong>Design</strong=
+></p></th>
+<td data-local-id=3D"4ec05f92-49df-4159-84cf-80fc66ae2523" class=3D"conflue=
+nceTd">
+<p local-id=3D"fcf6421e-3b2b-4052-ba63-74762c7556fa"><a class=3D"external-l=
+ink" data-card-appearance=3D"inline" href=3D"https://www.figma.com/design/V=
+PXgmnVHlPKDFZdU0w8RKP/Centra-Sul-Dao?node-id=3D5825-184855&amp;t=3Di8gHht6x=
+kPkterPY-0" local-id=3D"6fe83767-7a4e-47e2-894d-23615a52ab35" rel=3D"nofoll=
+ow">https://www.figma.com/design/VPXgmnVHlPKDFZdU0w8RKP/Centra-Sul-Dao?node=
+-id=3D5825-184855&amp;t=3Di8gHht6xkPkterPY-0</a></p></td>
+</tr>
+<tr ac:local-id=3D"d844b255-2e61-4929-88f3-967d5267b541">
+<th data-local-id=3D"25ab0197-f9c4-43b8-b5e4-9abe63bd6f95" class=3D"conflue=
+nceTh">
+<p local-id=3D"192f2093-1924-4ac5-a067-0acae55e503e"><strong>Task Status</s=
+trong></p></th>
+<td data-local-id=3D"066121af-a01e-48ba-b255-3aab8c251a69" class=3D"conflue=
+nceTd">
+<p local-id=3D"1fbabeac-c4e4-43c8-ac69-a0cc46641a2b"><span class=3D"status-=
+macro aui-lozenge aui-lozenge-visual-refresh aui-lozenge-complete">READY FO=
+R DEV</span></p></td>
+</tr>
+<tr ac:local-id=3D"10c88a58-8866-4582-b3c5-9306404dc846">
+<th data-local-id=3D"054fbf4b-e0ce-4688-9658-01bba29fcb09" class=3D"conflue=
+nceTh">
+<p local-id=3D"e2430671-ecd3-43f2-b068-5d1770bfc89b"><strong>Owner</strong>=
+</p></th>
+<td data-local-id=3D"73f64288-9b2f-48cf-a5da-7c5e06d8857c" class=3D"conflue=
+nceTd">
+<p local-id=3D"b6996208-29da-4f14-8824-38bdb6522164"><a class=3D"confluence=
+-userlink user-mention" data-account-id=3D"618cd896fba4d0006adf781f" href=
+=3D"https://rndpoint.atlassian.net/wiki/people/618cd896fba4d0006adf781f?ref=
+=3Dconfluence" target=3D"_blank" data-linked-resource-id=3D"429359160" data=
+-linked-resource-version=3D"1" data-linked-resource-type=3D"userinfo" data-=
+base-url=3D"https://rndpoint.atlassian.net/wiki">Eugene Birski</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p local-id=3D"2dac8594-9835-4d67-8edc-d8dccde74870"></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p local-id=3D"fb6777e0-2f4e-4443-9057-73add444cc18"></p>
+<div class=3D"table-wrap">
+<table data-table-width=3D"760" data-layout=3D"default" data-local-id=3D"62=
+fd2e34-f92d-4cb5-909c-f86a76b123b6" class=3D"confluenceTable">
+<tbody>
+<tr ac:local-id=3D"5c6bf495-0cfc-4cad-a11d-34bcb250c7e0">
+<th rowspan=3D"2" data-local-id=3D"d1492f88-a0b0-427b-a95e-0455f881d5b3" cl=
+ass=3D"confluenceTh">
+<p local-id=3D"94a134ce-9596-425a-9d93-21369741198e">Revision History</p></=
+th>
+<th data-local-id=3D"213d4f5c-24ac-4f4b-96e2-b7fec9304a31" class=3D"conflue=
+nceTh">
+<p local-id=3D"0b039d60-8453-4347-b5e4-fe2e14f817d3">Version</p></th>
+<th data-local-id=3D"1d17336f-1fb9-4de2-a4d1-55b4ee6f6da1" class=3D"conflue=
+nceTh">
+<p local-id=3D"04aceb1e-80d4-4f53-af2c-f6b7f2d966fb">Date&nbsp;</p></th>
+<th data-local-id=3D"e21344bc-79b6-4eda-a1a0-b5ff13bb2efc" class=3D"conflue=
+nceTh">
+<p local-id=3D"ac4a2ecc-b629-47df-a300-cc08415279d6">Description</p></th>
+</tr>
+<tr ac:local-id=3D"2518c6d2-d78e-4398-b28d-444b1cb48067">
+<td data-local-id=3D"8b78ef67-e28b-4525-8723-c72daa108ea9" class=3D"conflue=
+nceTd">
+<p local-id=3D"e751dbcc-f4b4-4bc5-9659-2c98f571b875">1</p></td>
+<td data-local-id=3D"5f1aa356-e5ed-4fc2-be02-b1d6c16b0be3" class=3D"conflue=
+nceTd">
+<p local-id=3D"dd0ceb14-65f1-410a-b935-f24215aaa4b1"><time datetime=3D"2025=
+-10-30" class=3D"date-past">30 =D0=BE=D0=BA=D1=82. 2025=E2=80=AF=D0=B3.</ti=
+me>&nbsp;&nbsp;</p></td>
+<td data-local-id=3D"d1939328-03d1-48cd-9803-41ef8d7c0678" class=3D"conflue=
+nceTd">
+<p local-id=3D"35316778-ae7a-44bb-b12c-727f06aa87d7"></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h1 local-id=3D"9d025a73-a3d4-453e-8cf3-4bb8e66b0698" id=3D"Story:User.User=
+Profile-UserStory">User Story</h1>
+<div class=3D"table-wrap">
+<table data-table-width=3D"760" data-layout=3D"default" data-local-id=3D"06=
+cd7713-cec4-4186-9cc4-3bac392c5d08" class=3D"confluenceTable">
+<tbody>
+<tr ac:local-id=3D"baf1af2b-ddf8-4be3-ac4d-ecc08d26c0a0">
+<th data-local-id=3D"e57aa73b-5ef0-4b94-abb0-c08babccffd5" class=3D"conflue=
+nceTh">
+<p local-id=3D"e15873b7-2dbc-4e84-8c0a-d0ff5db45fff"><strong>As a</strong><=
+/p></th>
+<td data-local-id=3D"efe144df-0583-46a2-945e-1d3339803df6" class=3D"conflue=
+nceTd">
+<p local-id=3D"135adb5e-ba49-4e2e-9fc2-9fb7033f0bd0">user&nbsp;</p></td>
+</tr>
+<tr ac:local-id=3D"c839ebd7-1681-4df8-9c73-081e21d46a5b">
+<th data-local-id=3D"7a0d40d1-f06a-4634-a59c-f927d9704485" class=3D"conflue=
+nceTh">
+<p local-id=3D"1e5dd227-0e0f-48e8-b07a-9a1a35790bcf"><strong>I want to</str=
+ong></p></th>
+<td data-local-id=3D"03da0038-6e14-4c26-b884-2c1cf21fcdfe" class=3D"conflue=
+nceTd">
+<p local-id=3D"2e395939-f6dd-4867-9577-7af1e722603b">have ability to fill i=
+n and update profile info&nbsp;</p></td>
+</tr>
+<tr ac:local-id=3D"86fe267d-b073-408b-afae-63a09abbc004">
+<th data-local-id=3D"187e730c-6d35-4989-b3c6-c63cb7565728" class=3D"conflue=
+nceTh">
+<p local-id=3D"6b127d52-bf43-458a-bd21-80a4b9250648"><strong>So that</stron=
+g></p></th>
+<td data-local-id=3D"5b029ab9-c1a6-4b14-95fb-d643a38ea024" class=3D"conflue=
+nceTd">
+<p local-id=3D"a0f5821a-07d5-4653-a1a0-47cb58d5bc2a">I can fully set up my =
+profile and use platform features&nbsp;</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h1 local-id=3D"1b107b13-d7ae-448e-bb04-52b3210607cd" id=3D"Story:User.User=
+Profile-Acceptancecriteria">Acceptance criteria</h1>
+<div class=3D"table-wrap">
+<table data-table-width=3D"760" data-layout=3D"default" data-local-id=3D"48=
+4d42a6-c4e1-427f-97ca-f72f0f136958" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 68.0px;">
+<col style=3D"width: 691.0px;">
+</colgroup>
+<tbody>
+<tr ac:local-id=3D"0837f7c5-2320-4984-840b-ee7b3ca1b977">
+<th data-local-id=3D"89b4fea1-83f7-4301-95d6-25c82beaefe5" class=3D"conflue=
+nceTh">
+<p local-id=3D"faf1559c-2721-4036-a25c-d77637bffe23"><strong>AC#</strong></=
+p></th>
+<th data-local-id=3D"e5c86e45-3496-4415-a1c8-742d2d5f3475" class=3D"conflue=
+nceTh">
+<p local-id=3D"47b3bad2-8dc0-4f3d-b308-f88ac67e9e7c"><strong>Description</s=
+trong></p></th>
+</tr>
+<tr ac:local-id=3D"3ee6442a-6d43-47db-9814-b133683011a7">
+<td data-local-id=3D"f6ca437a-1058-4ff8-96f1-266ed6825afc" class=3D"conflue=
+nceTd">
+<p local-id=3D"ae465305-50fa-460f-8f4f-4ee38db41b82">1</p></td>
+<td data-local-id=3D"5b11e8c6-06b5-49b7-ba01-dd97088072ca" class=3D"conflue=
+nceTd">
+<p local-id=3D"a603a6a2-398f-40d1-afd9-59125ccdfb3b">When the user is logge=
+d in, the user shall be able to access the Profile information on the Profi=
+le page.&nbsp;</p>
+<p local-id=3D"26ed702a-668a-457d-bb48-43728e0509c0">The page can be obtain=
+ed from the Main Top Menu.</p></td>
+</tr>
+<tr ac:local-id=3D"3d89040c-7d6c-4a3a-acf4-ec3e3600ee3b">
+<td data-local-id=3D"04074119-ac49-4191-b08f-9b597ce6eba8" class=3D"conflue=
+nceTd">
+<p local-id=3D"e9169810-93dd-433c-86b4-aeb585011dd5">2</p></td>
+<td data-local-id=3D"21348acd-bc9e-4b8c-a74a-5cd7cce3924e" class=3D"conflue=
+nceTd">
+<p local-id=3D"80fb7a65-9859-4d0b-a33a-799fdd365992">The User profile is sp=
+lit into four main sections:</p>
+<ol start=3D"1" local-id=3D"fbf1483c-33df-4d3b-8d79-c7e51d93e962">
+<li local-id=3D"ff4f33e9-9c48-4e50-aaeb-95ed09f926c5">
+<p local-id=3D"bed3850c-3127-4041-9e54-989cfd847a98">My Account -</p>
+<ol start=3D"1" local-id=3D"4d53fb4e-e73f-4bef-9549-58b095c75c32">
+<li local-id=3D"dc90663b-da4c-413d-bd85-2843480f368f">
+<p local-id=3D"34dda6d8-0d7a-44e4-875b-4e02ec4b4a2b">=D1=82=D1=83=D1=82 =D0=
+=BD=D0=B0=D0=BF=D0=B8=D1=81=D0=B0=D1=82=D1=8C =D1=87=D1=82=D0=BE =D0=B1=D1=
+=83=D0=B4=D0=B5=D1=82 =D0=BD=D0=B8=D0=BA=D0=BD=D0=B5=D0=B9=D0=BC, =D0=B0=D0=
+=B2=D0=B0=D1=82=D0=B0=D1=80, =D1=80=D0=BE=D0=BB=D1=8C, =D0=BD=D1=84=D1=82 =
+=D0=B4=D0=BE=D1=81=D1=82=D1=83=D0=BF, =D0=B2=D0=BE=D1=82=D0=B8=D0=BD=D0=B3 =
+=D0=BF=D0=B0=D1=83=D0=B5=D1=80</p></li>
+</ol></li>
+<li local-id=3D"ed7fb1ab-0c23-4758-bb3c-cad02aabf45d">
+<p local-id=3D"99a52311-0ef3-44b6-b553-092339e0c950">My wallet</p></li>
+<li local-id=3D"518389d2-bd4a-4a7b-8a0f-b3410044dba9">
+<p local-id=3D"41027def-6eb4-4241-adca-c2beea3313c3">Personal info - curren=
+t page</p></li>
+<li local-id=3D"0c637d0f-a6c7-45e6-a3b3-1d9137994561">
+<p local-id=3D"bdfa041a-7a27-4d10-84f1-f1373aad2a26">KYC</p></li>
+</ol></td>
+</tr>
+<tr ac:local-id=3D"5cb7f95a-46be-41b9-b58d-f360344a8b36">
+<td data-local-id=3D"8af4b479-09c5-4326-875c-a3de54d3ce9e" class=3D"conflue=
+nceTd">
+<p local-id=3D"88e85bba-3274-400b-8a4b-c22ccb4264c4">3</p></td>
+<td data-local-id=3D"8e137c20-bb35-4cf8-8866-e1aa878c7db3" class=3D"conflue=
+nceTd">
+<p local-id=3D"ede5d548-b592-4966-b092-cc8e591f3ce7">The user should be abl=
+e to READ and UPDATE the following <strong>Personal info</strong>:</p>
+<div class=3D"table-wrap">
+<table data-layout=3D"default" data-local-id=3D"76635d9f-5fcc-4822-afa0-fb2=
+ebee1e967" class=3D"confluenceTable">
+<tbody>
+<tr ac:local-id=3D"de1a97a6-9d54-4118-812e-252e8009c7f6">
+<th data-local-id=3D"17db6a08-2287-41ca-ac52-a9b2a7012013" class=3D"conflue=
+nceTh">
+<p local-id=3D"787fab76-30ec-4b01-a61e-f77803628752"><strong>Data</strong><=
+/p></th>
+<th data-local-id=3D"8460d7a0-17e3-4f0c-85e0-20d0d979e96f" class=3D"conflue=
+nceTh">
+<p local-id=3D"282a11b4-2cd0-45a9-a333-6a4aa0317a00"><strong>Format</strong=
+></p></th>
+<th data-local-id=3D"4df56cc6-5095-4b1d-9eaf-af3a5d5104d7" class=3D"conflue=
+nceTh">
+<p local-id=3D"2da3bc3c-5716-4cd2-969c-d6e7b0e445ad"><strong>Type</strong><=
+/p></th>
+<th data-local-id=3D"fa083566-31ba-4711-aaa0-d59aee9a2a32" class=3D"conflue=
+nceTh">
+<p local-id=3D"7650dc0e-b77e-4c0b-b769-acdf6343765a"><strong>Validation</st=
+rong></p></th>
+</tr>
+<tr ac:local-id=3D"5e6c5b4f-0dcc-4e6b-ab59-05cd837f3122">
+<td data-local-id=3D"4d8d2bba-1676-4ef0-a5c5-ef2cee5d1456" class=3D"conflue=
+nceTd">
+<p local-id=3D"bc71cc11-0b7a-436e-ad83-0e751edc2920">First Name</p></td>
+<td data-local-id=3D"46287da0-08dd-4811-a2b4-ffe89010d527" class=3D"conflue=
+nceTd">
+<p local-id=3D"b02dab2b-1f45-4cee-836a-3c3f49609b2d">text</p></td>
+<td data-local-id=3D"9ee7f939-e60f-4d50-85be-d0443056f5c0" class=3D"conflue=
+nceTd">
+<p local-id=3D"accacfe0-cc4f-4a58-8b8b-33ad699175d2">mandatory</p></td>
+<td data-local-id=3D"72cda8ba-811e-4be6-b8b1-5bfc7fdebe30" class=3D"conflue=
+nceTd">
+<p local-id=3D"82369b5c-a778-4616-8276-c26941809c31">a. if the user tries t=
+o save an empty field, the error: <br>
+b. Contain only text symbols, a hyphen, ', " - if other characters are used=
+, error: <br>
+c. Shall not be longer than 50 symbols =E2=80=94 if more than 50 symbols, e=
+rror:</p></td>
+</tr>
+<tr ac:local-id=3D"e6417294-4348-4941-9ff2-abdf9da82d12">
+<td data-local-id=3D"fca299e4-e72f-4d33-85d8-2acbcc39af92" class=3D"conflue=
+nceTd">
+<p local-id=3D"0a17147f-2693-466f-ba4a-0453dfa4008e">Last Name</p></td>
+<td data-local-id=3D"93d25827-8000-4dde-8cda-6b4cd0859707" class=3D"conflue=
+nceTd">
+<p local-id=3D"51aaad9f-5a22-4710-b435-17f9c6edf52d">text</p></td>
+<td data-local-id=3D"953463b3-fc90-4c31-82e2-1e73584aa8dc" class=3D"conflue=
+nceTd">
+<p local-id=3D"331d7d35-4c10-4d74-87d0-1aa4c7840047">mandatory</p></td>
+<td data-local-id=3D"1843f5ba-b673-4117-a64e-710632d92d65" class=3D"conflue=
+nceTd">
+<p local-id=3D"ddf6fd9e-c0f1-4d71-b5b9-c9237cf843a6">a. if the user tries t=
+o save an empty field, the error: <br>
+b. Contain only text symbols, spaces, a hyphen, ', " - if other characters =
+are used, error: <br>
+c. Shall not be longer than 50 symbols =E2=80=94 if more than 50 symbols, e=
+rror:</p></td>
+</tr>
+<tr ac:local-id=3D"a4328db4-182d-4c66-a85f-206a0af7a6bf">
+<td data-local-id=3D"a19bc71a-fad9-4ffc-bcae-c96138c3a577" class=3D"conflue=
+nceTd">
+<p local-id=3D"a434af59-4534-4429-8bde-7c0698ffa642">Middle name</p></td>
+<td data-local-id=3D"d72755c9-1f66-4e19-8af2-31a1384089ee" class=3D"conflue=
+nceTd">
+<p local-id=3D"9dc51cb7-f9a8-4567-a732-28e8778f0f3b">text</p></td>
+<td data-local-id=3D"750f6f95-6063-45f3-9177-c61fad9645b3" class=3D"conflue=
+nceTd">
+<p local-id=3D"adc41357-2aba-4f0f-81e7-2c363bb69ca2">optional</p></td>
+<td data-local-id=3D"fc337bbc-10b7-45c2-8969-965f652fcb4f" class=3D"conflue=
+nceTd">
+<p local-id=3D"9c03c61e-16f3-468a-8e4e-c6b551e42892">a. Contain only text s=
+ymbols, spaces, a hyphen, ', " - if other characters are used, error: <br>
+b. Shall not be longer than 50 symbols =E2=80=94 if more than 50 symbols, e=
+rror:</p></td>
+</tr>
+<tr ac:local-id=3D"b758ecb9-e7f1-4e3b-8823-ca06f210e332">
+<td data-local-id=3D"5ab65a89-448c-4167-951e-2eb4340b8a11" class=3D"conflue=
+nceTd">
+<p local-id=3D"f1b595c7-a49c-446d-ab67-2ed5835ebbb1">Date of birth</p></td>
+<td data-local-id=3D"b6da7246-c5f1-4224-82dc-5bf87ca9e326" class=3D"conflue=
+nceTd">
+<p local-id=3D"fa6bade9-5934-4575-9718-38f4991dcaa3">date: <a class=3D"exte=
+rnal-link" href=3D"http://dd.mm" rel=3D"nofollow">dd.mm</a>.yyyy</p></td>
+<td data-local-id=3D"a3a79a5b-0109-4260-887a-4855d1b709c5" class=3D"conflue=
+nceTd">
+<p local-id=3D"7ae078c1-8745-4af7-9758-693272129ea5">mandatory</p></td>
+<td data-local-id=3D"6ad00a60-3884-4d81-9e9f-eb232c242151" class=3D"conflue=
+nceTd">
+<p local-id=3D"377c286b-da50-46b3-92fd-056b5d7506d7">a. if the user tries t=
+o save an empty field, the error: <br>
+b. Shall have age restrictions, if the user tries to set the age under 18:<=
+/p></td>
+</tr>
+<tr ac:local-id=3D"589d2c75-77ab-4b95-ae1f-9c58deabda8c">
+<td data-local-id=3D"0c010115-af0d-46f5-8ce1-6d12e213e5f9" class=3D"conflue=
+nceTd">
+<p local-id=3D"ec8aa2ef-cdd5-4cf9-ba04-770a2a13813e">Mobile number</p></td>
+<td data-local-id=3D"451d8661-e2ce-48d6-9b7b-96f1003731fb" class=3D"conflue=
+nceTd">
+<p local-id=3D"598c75b3-9cca-4722-98b6-372295e0773e">numeric</p></td>
+<td data-local-id=3D"05aa14e4-7195-4e3f-82f3-be3272147d80" class=3D"conflue=
+nceTd">
+<p local-id=3D"95cf942a-3ec9-45b2-8e2a-ee57a65fda1d">mandatory only in case=
+ when used for reg and auth&nbsp;<br>
+method</p></td>
+<td data-local-id=3D"beada52d-d818-43fd-a454-f5a1c63e294e" class=3D"conflue=
+nceTd">
+<p local-id=3D"e4086e2d-9a53-4537-aab0-ff056ff1e161">a. if the user tries t=
+o save an empty field, the error:</p>
+<p local-id=3D"3b9aabce-aa39-4884-9e82-c8a2914ad7fb">Validation of the phon=
+e complies with the library used for this type of field</p></td>
+</tr>
+<tr ac:local-id=3D"b0ca33e9-1979-4138-97e2-7aa439a16370">
+<td data-local-id=3D"dff5eeba-27c0-4068-a9df-18d1260646d9" class=3D"conflue=
+nceTd">
+<p local-id=3D"f3a4fc0a-f4c2-4aca-aacc-18544740ddd6">Address line 1</p></td=
+>
+<td data-local-id=3D"2c302c0f-2151-48f5-af77-c7536111d89c" class=3D"conflue=
+nceTd">
+<p local-id=3D"f89dcb04-c7a9-473d-9e2a-3b54f879836f">text</p></td>
+<td data-local-id=3D"76e4e103-6eb4-4ee6-b267-b44b2c91357e" class=3D"conflue=
+nceTd">
+<p local-id=3D"f2459509-0f87-4d61-bac5-087adf37f3bb">mandatory</p></td>
+<td data-local-id=3D"fadfde07-6f8a-47ce-9831-2db7a3df1fd9" class=3D"conflue=
+nceTd">
+<p local-id=3D"d1d47537-f99d-4299-ab02-105b17a3ad65">a.&nbsp; if the user t=
+ries to save an empty field, the error:</p>
+<p local-id=3D"a8041a21-310f-45cf-9045-228be542adca">b.&nbsp; Shall not be =
+longer than 100 characters =E2=80=94 if more than 100 symbols, error:</p></=
+td>
+</tr>
+<tr ac:local-id=3D"a7520a0f-637e-4321-b975-2f803a2f9288">
+<td data-local-id=3D"a360bc84-b234-4d36-9de7-c33223cff4c7" class=3D"conflue=
+nceTd">
+<p local-id=3D"4ff30dcf-6456-4ead-bfb4-16b21642dda8">Address line 2</p></td=
+>
+<td data-local-id=3D"acd8063a-2364-42c3-aec6-9f5964557984" class=3D"conflue=
+nceTd">
+<p local-id=3D"467ac2ba-3d0b-46f8-ae8e-f00b6d544ab2">text</p></td>
+<td data-local-id=3D"8ba07b4f-fb92-4e6f-8db0-090d22edbab7" class=3D"conflue=
+nceTd">
+<p local-id=3D"a346489a-56e0-4706-bb92-993d62d8365d">optional</p></td>
+<td data-local-id=3D"9d659846-9c54-422a-802a-db6ec3663ca7" class=3D"conflue=
+nceTd">
+<p local-id=3D"dacb88ea-2244-4898-8493-22b57954ae09">Same as Address line 1=
+</p></td>
+</tr>
+<tr ac:local-id=3D"1f6f30a5-7864-425b-b194-918b71474783">
+<td data-local-id=3D"ba6ecdf4-45ea-4f86-8ef2-33713808bb22" class=3D"conflue=
+nceTd">
+<p local-id=3D"9ad4f02f-c6eb-4b4a-b6bb-75dc907307af">Zip/postal code</p></t=
+d>
+<td data-local-id=3D"5a6a9ee3-af2d-4b0f-a787-794f1a4c54d6" class=3D"conflue=
+nceTd">
+<p local-id=3D"7f8f1e4a-d640-4123-8df1-19c9feed67e7">text</p></td>
+<td data-local-id=3D"79048e8d-1b60-4617-95cd-4e89534c9e73" class=3D"conflue=
+nceTd">
+<p local-id=3D"2ec98d07-1a4f-4feb-83d9-8ccbd837cd02">mandatory</p></td>
+<td data-local-id=3D"8d12f550-c8ab-4c6c-bbda-e0899e782342" class=3D"conflue=
+nceTd">
+<p local-id=3D"8e64e700-9c94-46e7-bb99-d52599cf7541">a. if the user tries t=
+o save an empty field, error:<br>
+b. Contain only numeric symbols, letters, hyphens, and spaces =E2=80=94 if =
+other symbols are used, error: <br>
+c. Shall not be longer than 20 symbols =E2=80=94 if more than 20 symbols, e=
+rror:</p></td>
+</tr>
+<tr ac:local-id=3D"5f7ef202-3300-4105-96d4-a1b7de868a26">
+<td data-local-id=3D"a8494708-4e9e-4cb4-ba8d-a7b7b54faa80" class=3D"conflue=
+nceTd">
+<p local-id=3D"6e9eb5e6-c462-46ed-8182-7b10b9ba0cef">State/Province</p></td=
+>
+<td data-local-id=3D"95e72a1f-4ba1-4b4b-8041-8d15af36dcd5" class=3D"conflue=
+nceTd">
+<p local-id=3D"d9971969-aada-46fc-bee2-f003aeb5e417">text</p></td>
+<td data-local-id=3D"93ae0e9c-51da-4e82-9538-fb626217ebc0" class=3D"conflue=
+nceTd">
+<p local-id=3D"4cdca0f5-2d59-446a-8a8f-d59f7b174544">mandatory</p></td>
+<td data-local-id=3D"1ac19e2b-34d1-4cac-9952-1ec387dbbc59" class=3D"conflue=
+nceTd">
+<p local-id=3D"2480711d-53d8-4bf3-bef9-df09789e7eff">a.&nbsp; if the user t=
+ries to save an empty field, the error: <br>
+b. Shall not be longer than 50 symbols =E2=80=94 if more than 50 symbols, e=
+rror:</p></td>
+</tr>
+<tr ac:local-id=3D"c4be0a02-3bb8-4671-8317-2b7fa23cfd3f">
+<td data-local-id=3D"b071d75b-9117-4d24-9337-b6f228f37d94" class=3D"conflue=
+nceTd">
+<p local-id=3D"b77617e7-b043-4b12-9e5f-b8ba9c02a890">City</p></td>
+<td data-local-id=3D"40cafd87-f919-4e58-8d12-91176b915c4d" class=3D"conflue=
+nceTd">
+<p local-id=3D"b6e0505f-b046-4706-82ec-feee063b152e">text</p></td>
+<td data-local-id=3D"fdfa34e2-1fb4-42dd-a227-f067a366d39b" class=3D"conflue=
+nceTd">
+<p local-id=3D"0547ad5f-434f-450d-8b32-fa5766b78298">mandatory</p></td>
+<td data-local-id=3D"48412257-e8d1-4ffd-98c7-82a44c716ca3" class=3D"conflue=
+nceTd">
+<p local-id=3D"60809114-2ea1-4637-a7a5-3eae113bcb35">a.&nbsp; if the user t=
+ries to save an empty field, the error: <br>
+b. Shall not be longer than 50 symbols =E2=80=94 if more than 50 symbols, e=
+rror:</p></td>
+</tr>
+<tr ac:local-id=3D"b93dd9fd-97a8-43da-9980-2935a62f6053">
+<td data-local-id=3D"4dad9b7d-6bcc-4d42-bdad-863bfa1b3237" class=3D"conflue=
+nceTd">
+<p local-id=3D"62d24225-62a7-4cfc-82f7-689137b0ea93">Country or residence</=
+p></td>
+<td data-local-id=3D"c657ccc6-54bf-4170-8293-8a897dca1a48" class=3D"conflue=
+nceTd">
+<p local-id=3D"c3d97d9a-5e42-4d96-bbd2-2a527ade17ba">text</p></td>
+<td data-local-id=3D"e391323f-394c-45ee-bc57-a4a71813bfd9" class=3D"conflue=
+nceTd">
+<p local-id=3D"63fb3111-f90f-482e-aebe-51b410a4f817">mandatory</p></td>
+<td data-local-id=3D"ce72e83a-5b7f-4168-ac64-dba60495b645" class=3D"conflue=
+nceTd">
+<p local-id=3D"69825d26-9cd2-48e4-9656-88faadf83d27">a. if the user tries t=
+o save an empty field, error: <br>
+b. user should be able to choose a country from the list</p>
+<p local-id=3D"68affff8-e5e7-43e6-a3f3-bd9ad536b520">c. only 1 option can b=
+e chosen</p></td>
+</tr>
+<tr ac:local-id=3D"491cbcf6-d64f-49b4-8d09-40faa67fbef5">
+<td data-local-id=3D"c84b6b4b-604f-4afc-afe6-5d392815ec76" class=3D"conflue=
+nceTd">
+<p local-id=3D"29199a6f-2814-4a8d-a9a5-439b149d098a">Salutation</p></td>
+<td data-local-id=3D"1b94888f-4ba0-4c85-bd99-d415e6558666" class=3D"conflue=
+nceTd">
+<p local-id=3D"6d5c46ce-c34f-48d1-ab37-8cd664c56a33">text</p></td>
+<td data-local-id=3D"152d29e9-9f43-41d9-a14f-2e32ff1543f7" class=3D"conflue=
+nceTd">
+<p local-id=3D"a57b0eca-06c9-42e5-ac0c-ac9f73a84391">mandatory</p></td>
+<td data-local-id=3D"5bbdb371-8fba-4bf8-ad21-9d52ecf42ffa" class=3D"conflue=
+nceTd">
+<p local-id=3D"6fd5aad6-13ca-4f5e-b6fd-1d81bafa06f7">a. The user should be =
+able to choose from the provided list of the following options:</p>
+<ul local-id=3D"5aee327e-75eb-4f26-a4ab-42f11cb44c87">
+<li local-id=3D"e1098f9c-9247-4895-bab7-191777969e69">
+<p local-id=3D"18c61280-651e-4470-bd85-b68b3fb11911">MR</p></li>
+<li local-id=3D"d6453882-93ea-4aa1-836a-d9454bdea196">
+<p local-id=3D"9d19ff60-4487-4ceb-8779-3481252b11aa">MS</p></li>
+<li local-id=3D"94394dea-b55a-4467-89a0-23791093b44e">
+<p local-id=3D"57961233-8e8d-4c84-998c-8dfa0cb4445f">D&nbsp;<br></p></li>
+</ul>
+<p local-id=3D"58a22586-d9a2-41aa-8d47-e51c83b9a0fc">b. Only one option can=
+ be chosen</p>
+<p local-id=3D"04408577-7083-48b2-8145-c1b76f9e969e">c. The "D" option is s=
+elected by default</p>
+<p local-id=3D"2af011a6-5d9c-48a3-bc16-0b1ae773f524">d. if the user tries t=
+o save an empty field, error:</p></td>
+</tr>
+<tr ac:local-id=3D"01ea2b21-51c6-45f7-9289-4b5a929c0451">
+<td data-local-id=3D"0d580554-e7b2-444f-93eb-bb393b8fabd7" class=3D"conflue=
+nceTd">
+<p local-id=3D"ed4a2c7a-01a8-4df3-acb0-478b9a77c701">Citizenship</p></td>
+<td data-local-id=3D"4b8c755c-6366-4d65-93dd-3338a7dd76b8" class=3D"conflue=
+nceTd">
+<p local-id=3D"8f5a3dac-433e-4a65-9d93-26fe940de013">text</p></td>
+<td data-local-id=3D"3f6c9d8e-8fbb-4f68-ba76-24365db22e7a" class=3D"conflue=
+nceTd">
+<p local-id=3D"8c819f97-7396-4580-8d5e-aca4d06b058f">mandatory</p></td>
+<td data-local-id=3D"6331ea68-a465-4606-a8ce-43325fa88178" class=3D"conflue=
+nceTd">
+<p local-id=3D"abcdc13e-614b-404f-9611-fd32a03470fc">a. The user should be =
+able to choose the option from the list</p>
+<p local-id=3D"adcaa357-5034-4fd4-92d5-e39ab61405db">b. Only one option can=
+ be chosen</p>
+<p local-id=3D"a2c038c6-18f9-4bf6-b205-66449c9e6de4">c. The empty field sho=
+uld be set by default</p>
+<p local-id=3D"c73457fc-385b-4164-891b-6626b140bdb3">d. The citizenship can=
+ differ from the country option</p>
+<p local-id=3D"9e0f0a2b-26e3-4f95-810e-fc0d5ae91269">e. if the user tries t=
+o save an empty field, error:</p></td>
+</tr>
+<tr ac:local-id=3D"2f527e8a-3b6d-451a-aa1b-e2ffffac0ec9">
+<td data-local-id=3D"ff5a32c8-6020-4b30-8650-69f8b358e2da" class=3D"conflue=
+nceTd">
+<p local-id=3D"2d0a4191-5b67-4463-952f-a1d78417fc37">City of Birth&nbsp;</p=
+></td>
+<td data-local-id=3D"0c867697-8daa-4fb2-9e56-34f531b84af3" class=3D"conflue=
+nceTd">
+<p local-id=3D"6ebade2a-fd6e-4fb2-8522-8b75a4fa4af3">text&nbsp;</p></td>
+<td data-local-id=3D"7134eb6f-d981-4297-a57b-5a9ba4ef9fef" class=3D"conflue=
+nceTd">
+<p local-id=3D"434910ac-2591-4eda-875d-414eb53cd9b5">mandatory&nbsp;</p></t=
+d>
+<td data-local-id=3D"639cd3f6-e034-4262-9342-9cd803c8b761" class=3D"conflue=
+nceTd">
+<p local-id=3D"bc6e96ce-1dd1-4bea-9259-2b9da9eed895">Same as City</p></td>
+</tr>
+<tr ac:local-id=3D"ce8a7fee-9601-410d-b3c1-023225a886e7">
+<td data-local-id=3D"57e6de7d-0537-4186-a653-b30d69a8a429" class=3D"conflue=
+nceTd">
+<p local-id=3D"18329ce3-754f-42e1-bb17-d111ac41d4b1">Birth country</p></td>
+<td data-local-id=3D"69bb46de-3a73-4792-b348-5f62ec9bafd7" class=3D"conflue=
+nceTd">
+<p local-id=3D"cdd841f5-64f0-42cf-a0e2-f6e88aeb6fdb">text</p></td>
+<td data-local-id=3D"a38eeb66-d716-4ab2-81c7-8640c926135b" class=3D"conflue=
+nceTd">
+<p local-id=3D"bf6d5fb7-cee0-4d4f-963e-bd2f155c729b">mandatory</p></td>
+<td data-local-id=3D"a3825eca-5cfb-4d5c-bfa3-1fce3cf58818" class=3D"conflue=
+nceTd">
+<p local-id=3D"5b53cb43-58f1-434b-836f-fef6ea266d75">Same as residence</p><=
+/td>
+</tr>
+<tr ac:local-id=3D"f6013de2-740e-4b16-a85c-9da2e52cf4f4">
+<td data-local-id=3D"0a1e940e-1199-4bda-b5e5-407b5165d346" class=3D"conflue=
+nceTd">
+<p local-id=3D"6e66ef2d-d2ee-4f08-9205-3c00755ee0e1">E-mail&nbsp;</p></td>
+<td data-local-id=3D"9028559a-cf85-4cf8-ad60-8871daf2a3a1" class=3D"conflue=
+nceTd">
+<p local-id=3D"fd89fe27-15dc-4702-a60d-fec515353904">text</p></td>
+<td data-local-id=3D"75ac5632-949f-469b-8aae-6e2b881dcf4a" class=3D"conflue=
+nceTd">
+<p local-id=3D"4a2d9908-5565-4b78-af64-f0186a672a29">mandatory only in case=
+ when used for reg and auth&nbsp;The <br>
+method is Social</p></td>
+<td data-local-id=3D"b8ba2019-9392-46ba-8494-24c810342e32" class=3D"conflue=
+nceTd">
+<p local-id=3D"9027eca6-1cec-43f3-882e-dd3ac383774d">Standard e-mail valida=
+tion</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p local-id=3D"25c0eb32-2ffc-436d-9b1e-31e1372260cf"></p></td>
+</tr>
+<tr ac:local-id=3D"6f2a9c07-2195-4145-b4d1-08dd71627564">
+<td data-local-id=3D"1171b63f-8ec5-49af-b91d-ab1565b862ab" class=3D"conflue=
+nceTd">
+<p local-id=3D"eaaef09b-8a2c-4e35-ab64-7ce6481ad268">4</p></td>
+<td data-local-id=3D"75f90d99-8bad-4723-b8a4-67d1e3afd951" class=3D"conflue=
+nceTd">
+<p local-id=3D"67aba81c-5987-4e01-8737-c29828acb445">Once the user KYC stat=
+us is<strong> In review</strong> or <strong>Verified</strong>, the user sha=
+ll not be able to change the profile data except Mobile number (if it's non=
+-credential).&nbsp;</p></td>
+</tr>
+<tr ac:local-id=3D"8fad9338-c439-4014-a172-8dc5642fe119">
+<td data-local-id=3D"035aba80-744f-461a-8862-dd6794b441cc" class=3D"conflue=
+nceTd">
+<p local-id=3D"aea4d96a-1ccc-4145-8ecd-a6fd695b4aa8">5</p></td>
+<td data-local-id=3D"ee1c60a2-1c7f-4fc5-a5f0-f93fc2ec774d" class=3D"conflue=
+nceTd">
+<ol start=3D"1" local-id=3D"9a9f1d63-ee49-4650-ba10-1d4bc50b596f">
+<li local-id=3D"d0b512e6-3ab7-4a71-9d51-235009bf5501">
+<p local-id=3D"a95e96a3-65b7-4230-a740-e796278ce401">The user should be abl=
+e to READ and UPDATE the following info about <strong>Next of Kin:</strong>=
+</p>
+<ol start=3D"1" local-id=3D"6b6a8ada-77c3-4cc7-a305-c922068cea43">
+<li local-id=3D"133a9e2d-0d0f-4733-a8e9-f785db70d56f">
+<p local-id=3D"1ea0f2c6-bcff-4165-84e3-c75dc30ba1af">Full Name</p>
+<ol start=3D"1" local-id=3D"3fae3336-e426-4f49-8deb-8bcd144e9712">
+<li local-id=3D"f09fed75-ca4a-4bbc-9220-94ce920f0839">
+<p local-id=3D"00617940-368a-4ee6-8602-f9949ccf0925">text input field</p></=
+li>
+<li local-id=3D"6f272bdd-ed03-473d-a463-ac2ed6886a83">
+<p local-id=3D"b25fac21-7a9d-4b83-bd6c-0e235ed71fa9">The field is required =
+and cannot be blank</p></li>
+<li local-id=3D"f92a900c-5941-490f-a3ec-564de7c29d51">
+<p local-id=3D"033df75e-7ce6-4d03-9e0d-d0ef22a6b0da">Shall not be longer th=
+an 100 characters</p></li>
+</ol></li>
+<li local-id=3D"246577b0-58af-4fbe-aac9-17610810a3fb">
+<p local-id=3D"aed369f0-1691-48e3-9f08-d898e8204963">Email</p>
+<ol start=3D"1" local-id=3D"e245b1b3-5480-419e-9bbb-bc5efaab29f4">
+<li local-id=3D"32c33e49-74de-42fe-89d1-d8781d534d08">
+<p local-id=3D"2b441cb5-a365-46be-aafb-55260671055d">text input field</p></=
+li>
+<li local-id=3D"10a3932d-3efb-4b3c-b7c7-da42b2dd6841">
+<p local-id=3D"c306472f-c981-424f-8f5e-058287fd7a2e">Should have standard v=
+alidation rules per email address</p></li>
+<li local-id=3D"e2154365-bdfc-4388-bb8b-93c458e443c8">
+<p local-id=3D"97a249b1-5d16-4921-b1da-c69340286dea">The field is optional<=
+/p></li>
+</ol></li>
+<li local-id=3D"fc3af2b0-52bf-4031-9255-7a7a7798b81d">
+<p local-id=3D"6f6483f5-a8c3-4a60-9d9c-97bf340a7dda">Phone</p>
+<ol start=3D"1" local-id=3D"9f92c998-7ef5-4963-8de9-3d7ac1abc394">
+<li local-id=3D"bc0684d8-74e2-4534-9e3e-4edb8c148860">
+<p local-id=3D"350fa72a-1781-4afc-90f6-1d5962d2d0a7">number input field</p>=
+</li>
+<li local-id=3D"0c60efe9-c248-4cd2-9adb-927cf350b26f">
+<p local-id=3D"a89a983d-6cca-4490-b3dc-aeae08e3e7d1">should contain a count=
+ry selector that puts the country code upfront</p></li>
+<li local-id=3D"a4677fce-eb1f-487a-a825-1a0b607f256f">
+<p local-id=3D"147e4b2f-e7f4-49e7-8ba6-0a040e381f60">need to connect phone =
+country code library that will control and validate the phone number length=
+</p></li>
+<li local-id=3D"c2ae35b4-7874-49ad-b2c9-864f72c5186a">
+<p local-id=3D"78f966eb-59d9-42b1-9fd6-4cb856526ddd">The field is optional<=
+/p></li>
+</ol></li>
+<li local-id=3D"8c83daed-a813-4509-8b9c-1bc72fc8187c">
+<p local-id=3D"67881bc4-bb6c-4c76-b0a9-74867b2c5bfb">Relations</p>
+<ol start=3D"1" local-id=3D"d16ccd14-ec29-4185-bc64-d6b3ab154856">
+<li local-id=3D"155db7a9-54da-4ed2-a3e3-3ec2f7fb1cfb">
+<p local-id=3D"1219b689-a579-4eae-9737-9a9e41607480">text input field</p></=
+li>
+<li local-id=3D"73e09110-2a40-4335-840d-dbd8408bed5d">
+<p local-id=3D"ee18c069-a243-464a-83ff-3a2d03604ec7">Contain only text symb=
+ols, a hyphen, ', " - if other symbols are used</p></li>
+<li local-id=3D"c48cd48a-976f-4c1a-b99a-4fa3eefd7783">
+<p local-id=3D"5a2c8270-ff5b-4598-a4e6-8afc5a568a37">Shall not be longer th=
+an 50 symbols</p></li>
+<li local-id=3D"afa8e635-96d8-4851-93c1-417b9d719686">
+<p local-id=3D"f5eebcf0-2691-4258-b68f-430891b90c9f">The field is optional<=
+/p></li>
+</ol></li>
+</ol></li>
+<li local-id=3D"fe84b98c-0687-4e57-a188-c6f48d96fe1b">
+<p local-id=3D"9b3e7b45-bcc6-4e3f-ac98-52a27878e9b9">The information in thi=
+s block is optional, i.e., it can be empty until the user starts to edit it=
+.</p></li>
+</ol></td>
+</tr>
+<tr ac:local-id=3D"aa7a55f1-7d96-47ae-bd7e-a5031ab79018">
+<td data-local-id=3D"d2b14c3d-f300-4267-af17-f9197eb0ed7e" class=3D"conflue=
+nceTd">
+<p local-id=3D"2882a217-28e4-49d7-90cf-15213d576442">6</p></td>
+<td data-local-id=3D"f4793d44-caf3-40e7-ab91-d31b1f7557e3" class=3D"conflue=
+nceTd">
+<p local-id=3D"65d7892c-575d-4bcc-9def-30753fd15d11">The user should be abl=
+e to delete their account.</p>
+<p local-id=3D"5384e822-0f19-49b9-9bdc-d6e3517182c8">Described in a Separat=
+e task.</p></td>
+</tr>
+<tr ac:local-id=3D"9f9fd58e-1b88-4958-acdf-367ac54a1dec">
+<td data-local-id=3D"c343d15c-851c-48bb-9c27-aef7ab845c87" class=3D"conflue=
+nceTd">
+<p local-id=3D"9485d5f2-2862-4c39-9432-a2f2eeadfad5">7</p></td>
+<td data-local-id=3D"2b9c1712-79de-4d05-b780-09fbfd7e2b74" class=3D"conflue=
+nceTd">
+<p local-id=3D"07daa464-f270-492e-aae7-8a2f18e50a2d">Without a completed Us=
+er Profile section, the user should not be able to pass the KYC.</p>
+<p local-id=3D"d4001e6f-f128-4405-80be-968dd1d842ba">The access should be d=
+enied with an appropriate message that the user should complete their perso=
+nal data within the user profile first.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+    </div>
+</body>
+</html>
+------=_Part_64_1332878915.1767371374174
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: file:///C:/1c2c55cd4a4bee26e5535472f37982a67c6e2ce3d28516b57f9891d0a814ee2c
+
+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
+9vb2rr/++tbahQsXHvrQh547d261WkkCbG9sbJw+ffq2227b2dm5995777nnntlsFhHnzp07fvx4
+3/e11sx8hVd4Bf4LZfPucNcqztf1i20uto+Oju66667VavWQhzzkrrvuyszFYnHu3LlHPOIRFy9e
+HIbhxhtvPHfu3DiOtoFSynw+P3369JOf/OQbb7zxtttuu3DhQt/3wPnz50+fPl1rBTY2Nl78xV+c
+/x4AgO68885rr722lALYnD1/92o82p6fOnHi+DiOmblarRaLxWq1sr1YLNbrddd1rbXW2mw2W6/X
+QGttsVhExP7+/ubm5jiO8/nc9mq1igjbrbWu6yRN01RK2dzc5L9Qtrz3/J3TNB3fOr29sz2OY2tt
+GIb5fL5cLiNiNputVqvZbDYMA9D3/Xq9tm17sVhIunTp0rFjx1ar1cbGRmttvV5Lsp2Zfd/bbq11
+XbdYLPivdfHixcPDQ0kAoDvvvPPaa68tpXCZDTZCEv+H2GArxP8tFy9ePDw8lAQAleckgcT/ORJI
+/J8FAFSu+r8AAKhc9X8BAFC56v8CAKDynA4PD4dhmKbp1KlTEWF7mqaIaK2VUmwPw1BKKaUArbX7
+7rsvMyPiwoUL119//TXXXAPYlgTY5n6SbNs+ODjY2dkBDg8Pu67r+942AEgCANuSANtcJmlvb2+5
+XG5vb29sbEzTVEq57777Tp8+XUqxDUgaxzEz+76XNE3TarXa2trifgcHB/P5vNaamcMwABHRdR0g
+ybYk25JsS+Iy2+M4SiqlRMTBwYGkzc1NwLYkYBzHiCil2AYk2ZYEALYBQNI0TUBm9n1vGwAk8e8C
+AFSe08///M+fPXt2NpuVUnZ2dl78xV/81ltvHYahtXZ4eHjs2LFhGCJiGIadnZ1bbrnlj//4j1/+
+5V/+7/7u7178xV98c3Pz8PDwD/7gD/b39xeLxUMf+tCzZ88eHh7eddddN95444Me9KC/+qu/krRe
+r1/8xV98Pp///d///Wq12tzcHIZhsVgsl8vMfK3Xeq0nPOEJu7u7x44dW61WL/ZiL/YP//AP4ziW
+Us6ePdtam6bplV/5lff39++999577733lltuAYZhyMyu63Z3d0spx48fH4bhEY94xF/91V9dd911
+j3jEI+655x7bT3rSkzY2NiR1Xbe/v79cLre3txeLBfDYxz72qU996k033XTXXXcdHBzUWheLRa31
+/Pnz8/m87/vZbHb+/PkXe7EX+6M/+qOIWCwWL//yL3/33XfP5/O777776OiolFJrXa/XXdeN4/iw
+hz2s67qLFy8eHh6u12vbs9lsHMfMfNjDHvaEJzyh1jqbzS5dulRKeYmXeImXfumX5t8OACgf93Ef
+t7W1FRFAZi6XyzNnzrzsy75sa21zc/PhD3/405/+9BtvvLHWeuzYsa2trfl8/pjHPObg4OC22257
+mZd5mdOnT1933XUPechDLl682FpbLBaPe9zjrr322vV6vbW1VWuNiFrrwx72sFrrcrl86EMfGhG2
+T506tVgsrr322tVqddNNNw3D8PjHP/7GG2982MMe9sQnPvHaa69drVbz+fyhD33o3/3d3z3kIQ/Z
+2tq67rrrHvrQh9o+ffr01tbWqVOnbrnlFuDaa6+9+eabT506tVqtbr755uuuuy4zb7755pMnT0bE
+4eHhNddcU0o5f/785ubmsWPHHvawh504ceLUqVOPfexjt7a2Tp069Rd/8Rc333xzRJw4ceL48ePL
+5RLY3d2dzWaLxWJnZ+dRj3rU9ddfPwzD6dOnb7755htuuGFvb++WW25prS2Xy3EcH/zgB29tbc3n
+80c+8pGSbL/Yi70YsLu7e9ttty0Wi6Ojo+uuu242m73ES7zEDTfcsLW1tVwut7a2Njc3H/OYx5RS
+Tp06JYl/pdVqNY6jJADQnXfeee2115ZSeH4ycxiG+XzOczo6Otrd3b3hhht4Tpm5Xq8XiwUv2DiO
+tvu+5wFWq9Xh4eGpU6cyc71eLxYLLsvMYRjm8zn/VqvVquu6Ugov2H333Xfy5MlaK/drrU3TNJvN
++HcbhkFSa20+n/Mf7eLFi4eHh5IAQHfeeec111xTa+Wq/4UuXLhwdHQkCQDC9tQaV/3vNLUGAAAQ
+tg8Pj7jqf6HVej0OgyQAAELS8ujo0t5+2lz1v8dqPVy8eNE2AABABST29i4dLY/6vo8IrvqfzWaa
+xmFYk5YEAABQASCkNo5Hw2Cu+l9AEBFIPBMAUAHAdtd18/lcElf9jzeO42q9xuaZAIAKAMeOHdva
+2pLEVf9LDMNw4eLFaRwlAQAQthcbG9vb25K46n+Pvu9PHD8uCQAAICRtbmxw1f9Cs9ms73vbAACE
+pFIqV/3vVGoFAAAIQOLf4OLFi+v1GgAy0zZX/ZcTVwAAwXP6yq/8yic/+ck/93M/d3R0tF6vM9M2
+8PjHP/5xj3sckJnDMOzt7X3Zl33Zer3+67/+69/+7d/+kR/5kX/4h38YhmG9Xtvmqv9qAEDlOd16
+663f8z3fc8011/z4j//4k5/85Jd+6Zc+d+7ciRMn7r333vPnz3/2Z3/2j/3Yjz3ucY976EMfeuut
+t0q69957v+RLvuQ7vuM7/v7v//63f/u3n/70p7/e673em77pm3LVfykAIHhOj3jEIx7+8If/6q/+
+6m//9m9HxHq9/v3f//3d3d2XeZmXebVXezXgSU960hu8wRs8+clPfp3XeZ3t7e3W2rXXXnvbbbfd
+dddd586de8/3fM8nPvGJXPVfDQCoPKeXeqmXeumXfumNjY2bb775L//yLx/1qEedOXMGOHnyZNd1
+wOu+7uv+yZ/8ybu8y7vs7+8DD33oQz/jMz7j6U9/+mMe85iHP/zh119//Su8witw1X81AEB33nnn
+tddeW0rhqv+FLl68eHh4KAkAKlf9XwAAVK76vwAAqFz1fwEAEDyA7Wc84xnDMFy4cGF3dxewbTsz
+bfO/2R133LG3twdk5mq1ykzb6/W6tWYbsG17b29vHEfAtm3+1wAAKg8wDMPP/MzPvMRLvMTjH//4
+xzzmMfv7+8MwXLp0qe/7vu9tv/Vbv/V8Pud/m4sXLz7+8Y+fz+d33313a+3SpUsnTpyw3ff9gx/8
+4Kc85Slnzpw5d+7cMAy7u7s7Ozu2t7e33/zN37zrOv53AAAqDxARb//2b3/77bc/8pGPfNjDHrZe
+r++5556dnZ2HPOQhly5dunDhQimF/4W2t7dPnTrVWrvuuuvOnDkzTdOFCxfGcbzllltOnDixWCzu
+uOOO66+//vrrr7/77ruHYVitVg9+8IO7ruN/DQBAd95557XXXltK4bJpmoZhlGgtgYiQyExJksZx
+tPlfodayWCwigsuGYWitSbIticsy03ZEZKakTJcStiVl5jQ1/ufpurpYLCRx2cWLFw8PDyUBQOUB
+Wmvr9XqxWNjm+en7nv8lMnO1Wm1sbADDMKzX662tLduAJMA299vb29ve3uZ/g9baer2ez+c8BwCg
+8gCZKSki+N8vIlarFZdlZtd1kiRxP0ncr5RSSuF/iWEYeG4AQPD/gCRJwB/+4R/u7e09/vGPf+pT
+n5qZ/N8BAFT+P/mHf/iHaZo2NjaOjo729/dt7+zsRAT/6wEAwf8n7/Iu7/KEJzzh7/7u7zY2NhaL
+hSRJ/F8AAFT+H7ANAFtbW+///u+/Xq/7vi+l9H3P/xEAQOUBJPF/SERwmaTM5LKIWCwWPCfb/O8R
+ETw3AKDyALXW1trBwYFt/peLiNlsxmV93+/v70/TxAswjuP+/j7/G5RS5vM5zw0AqDyn2WzW9z3/
+J0jiMkk7Ozu2+T9BEs8NAKg8D0n8XySJ/7MAgMpV/xcAAJUHmKbpZ3/2Zx/96EeXUra3ty9durS7
+u/vKr/zKkvjf7ODg4Jd/+Zdf9mVf9uLFizs7O7u7u7PZ7Pjx48Mw3HTTTfP5nP/1AIDKA7TWLl26
+9MQnPnG9Xu/v758/f/4hD3nIq7zKq/C/3DRN99xzz8/+7M/aXiwWrbXFYrFarWaz2eu//us/6EEP
+4n89AEB33nnntddeW0rhst3d3VJK13Xr9XoYhsViMZvN+F8oIkopXGZ7GIbDw8Na6ziOXddFxGq1
+2tjYiIhSCv97lFIigvtdvHjx8PBQEgBUntN8Pm8tp2mqtdba2blarfhfSFLf933fc1lrbT6fZ3o+
+r2CbxWIjMzPbOI787yFpPp/XWnkOAEDlAaZpyszNzQ3+97N9eHjY9z0wDEMpZTab8b9fa221WtVa
+eQ4AQOUBbPN/iG0us83/IbZ5bgBA5QU4OjqKiIhYr9fANE2z2ay1tr+/f+zYsfV6fccdd9xyyy2z
+2ay1No7jYrEYx3F3d/f48eMRAUhar9dd121tbXHVfy4AoPL8rFar3//93+/7fpqm2Wx2eHh4/Pjx
+w8PDvu/39/cjorUGPOMZz5jNZhsbGxExDIPt1Wr10Ic+dLlcrtfrg4OD2Ww2n89f+qVfutbKVf+J
+AIDK8zObzV7sxV6s6zpguVxubGxsb2/ffffdq9XqMY95zGq1krRcLk+ePHl0dLSzs1NrPTo6Ojg4
+mM/nfd8Pw2C7lLK5uWk7IrjqPxcAUHl+JN144408pwc/+MGAJB7g5MmTXLaxsXH69Gn+R5Jkm//L
+AIDKA5RSxnGcpsk2/8vZ7rqOy2qtwzBM02Sb/+Uys+s6nhsAUHmAiJjNZsMw2OZ/uVLKbDbjslJK
+13XDMPC/X62173ueGwBQAdvcr5SyWCz4P6fWWmvl/xzbAAAAkfY0TVz1v5BhmiYAAIDAPjg85Kr/
+hZbL5TCOkgAACEmr5fLCxd3WGlf9L2H7cLm8uLsrrgAAKiDp6PBguVp2XR8hrvofzozT1KZRPAsA
+UAFAklsb2pKr/lewkZB4JgCgArYjYmtraz6fS+Kq//HGaTo8OBiGQRIAAEAFIuL06dN933PV/xJ9
+328sFhcuXFgul5IAAAjb29vbfd9z1f8qko4fP15KAQAAqJLm8zlX/Wdar9eZyb9PrbXrOh6glNL1
+/Wq5lAQAVVJEcL/VarVarY4dOyYJGIZhf3//1KlTPD+2p2nquo6rXoDd3d2nPe1ptiOCf5/W2mw2
+e8QjHjGfz7lfiQAAAKg8p6/5mq9Zr9cPfvCD3/3d3/3ixYt7e3u//du//a7v+q7TND3pSU+6cOHC
+a73Wa+3u7p4+fRr4u7/7u2/6pm/6pm/6poODg+VyeeLEifvuu++66647d+7cxsbGfD6PiGma9vb2
+Njc3f+d3fuemm2568Rd/cf7f2N/fv/XWW1/iJV6i6zr+I+zv7z/+8Y9/iZd4iVorzwEAqDynrus+
+/uM//lu+5Vs+93M/d7lcnjlzppTyRV/0Ra21jY2Nw8PDv/zLv7z77rvf6Z3e6ZVe6ZX+7M/+bGtr
+6w//8A9/7/d+75Zbbtnf31+v1w972MP+6q/+qrV23XXXvcZrvMbP/uzPnj179tSpUxcuXHiJl3iJ
+F3/xF+f/jac97WkPe9jDuq7jsmEY/u7v/u4Rj3jE5ubmPffcc+ONN+7t7W1ubpZSDg8Pd3d3b7jh
+hszkslIKME3T4eHhzs6OJGB7e/vMmTO33377Qx7yEJ4DAFB5ToeHh7/3e7936dKle+6558yZM5l5
+8eLFe++99yEPeciDH/zgvu9/7dd+7fTp05k5DMPv/d7vHT9+/Ed/9EdvuummV3zFV/y+7/u+t3/7
+t//rv/7rRzziEf/wD//wd3/3d4vF4q677nrrt37rZzzjGfP5/OVe7uX4/2S1Wm1sbHC/ixcvPv3p
+T//zP//z9XoNdF23Xq9ba6//+q9/eHj4u7/7uy/xEi8xTdPGxsYdd9xxww03HBwcXLp0ab1ef8AH
+fECtlcu2t7dvvfVWnhsAoDvvvPPaa68tpXDZb/3Wb912222v93qvV0r5vd/7vZd7uZezfffddw/D
+8GIv9mKttYsXLz7pSU96szd7s6Ojo3vuueeRj3zk3//93+/u7h4eHj7ykY/8kz/5k9d5ndf5oz/6
+owc96EER8bjHPe6Rj3zkLbfccnBwsFqtbrzxxhMnTvD/xl//9V8/4hGP2Nzc5LKDg4Pf+I3fOH78
++H333XfixInd3d2HPvShT33qU1/mZV5muVzed9996/V6sVjMZrMLFy6sVqta6y233GL75V7u5bjf
+3XfffXh4+PCHP5zLLl68eHh4KAkAdOedd1577bWlFK76j3bx4sU77rjjxV7sxSKC/wir1erxj3/8
+i73Yi/V9z2UXL148PDyUBACVq/7TnDhxYpqmv/qrv+q6rpTCv880TbYf8YhH9H3PcwMAKlf9Zzpz
+5szJkyePjo5aa/z7dF23sbEhiecDAKhc9Z+slLK9vc1/LgCg8gC2n/GMZxw7duz48eO7u7s7Ozur
+1Soiuq6TJCkibLfWaq1Aa02SbduAJNu1VtvjOE7T1HWdpFrrNE0RAdi2DUiSlJkRIam1tlqtNjc3
+L126NE3Ter0+derUbDazbbuUYru1VkqRBFy8eHFra2u5XM5mM9uS+r7nstZaKUVSa02SbduSbAO1
+VtvTNK3X662tLf6PAAAqDzBN03K5vPfee4+OjjKz1tpam8/nmVlr3draOnPmzNOf/nTbs9ksM6+9
+9tphGJ7xjGccP348Irquu3jx4qlTp/b394+Ojra3t6+55po777zzoQ996NOf/vTlcllrnc1mwzAA
+XdcdHR3VWtfr9ebmZmYeHR293uu93tOe9rQnP/nJp0+f7vs+M0spGxsbt9xyy9Oe9jTbtm+66aZx
+HJ/ylKeUUiQBEWF7a2vrwQ9+8NOf/nTbtheLxXw+39jYePKTn7yxsbGxsSFpb29ve3t7tVoNw2D7
+1V/91fk/AgCoPEApJSKuueaag4ODxWJxdHR04sSJ1tp8Pn/iE59o+9prr+37fnt7e7VaZea11157
+7ty548ePb21tRUQpJSKGYTh+/PgNN9zQ933XdcePHx/HUdKZM2ci4tSpU5Jsnz9/vu/766677q67
+7trZ2dne3j48PJym6cYbb1wsFseOHbN97733njhxYmNjIyIi4vjx48vlcrlc7uzsXHvttcBisVgu
+lzs7O5k5TVPXdZJOnDixWq3GcbzxxhtXq9XOzs7GxsZsNgNKKeM4bm5u3nTTTavVarlcLhYL/i8A
+AHTnnXdee+21pRReqIODg4iYzWa2a638a7TWMrPrOv6txnGcpmmxWPBCtdYys+s6nh/bkvi/5eLF
+i4eHh5IAoPIAtg8PD1erVWtte3u7lLJarYDValVKGYZhd3f32muvve+++66//vphGE6cOHHx4sX7
+7rtve3s7M48dOyZpd3d3a2trZ2fn/PnzpZTd3d2dnR1JkjY2NlarVdd18/l8vV4fHR1tbW1lZmaW
+UtbrdWbaXq1Wkra2tsZxvHTp0s0337xarZ785CcvFoszZ84Ap06dunTpUkQMw9BaO3PmzIULF7qu
+G4ZhHEeg1jqbzRaLRSlltVodHh52XXffffddc801rbVaK3D69GlJ/B8BAFQeQNLf/d3fDcMwTdNs
+Nnv4wx/+hCc8Yb1eb29vr1arEydO9H0/DMOFCxduv/122y/xEi/x1Kc+9ezZs2fOnDk4OJjP5495
+zGPuuOOOrutuuummpz3taavVarFYTNN0zz33ZGbXdavV6pprrjl9+vSTnvSk+Xw+DIOkF3uxF7v7
+7rtXq9X+/n7Xda215XIZESdOnDh//vy11167vb19zTXXHB4ePuEJT8jMRz7ykefOncvMe+6558SJ
+E9M07e7u3nvvvRsbGydOnOi67q677rp06dKLvdiLrdfr++67bz6fr1ar5XJ58eLFiNjb2yulvNZr
+vdZsNuP/CABAd95557XXXltK4bLbbrvtxIkTkoZh2NnZGcfR9jRNtdZaK1Br3dvbq7W21ra3ty9d
+ugRIms1m4zhubW0Nw7Barba3t6dpWq1W8/k8IsZxnKap1mo7IpbL5TiOi8XCtu1jx44tl8tpmjJz
+Y2MjMzNzmqbFYjGOY62167ppmoBxHMdx3NjYWC6XksZx3NrakgSsVivbGxsb0zStVquImM/nwzBM
+07SxsXF0dBQRmbmxsTFN0ziOx44d43+/ixcvHh4eSgIA3Xnnnddee20pBWit7e7uHjt2bLlcbmxs
+SMrMWiv/0WxL4qp/t4sXLx4eHkoCgMpzevzjHy/p0qVLGxsbkh71qEddd911/EeTxFX/kQCAygNE
+xC233LK/v3/LLbcsl8u+77e2trjqfwEAoAK2uUzSLbfcwlX/e5grAICw3TK56n+n1hoAAEDYPjo6
+4qr/hYZhGIZBEgAAIenw8HD/8JCr/lcZp+nC7q4zAQAAKiDY3d09OjqazWYRwVX/w5lxHFfrlVuT
+BAAAUAEgYFyvh/Waq/43EEiSxDMBAP8IuiHp0fUtSkIAAAAASUVORK5CYII=
+------=_Part_64_1332878915.1767371374174--

@@ -9,6 +9,7 @@ __pycache__/
 venv/
 .env
 # *.json (allowed for manifest)
+credentials.json
 *.log
 .DS_Store
 
